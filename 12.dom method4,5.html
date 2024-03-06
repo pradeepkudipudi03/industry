@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>hi</p>
+    <p>welcome</p>
+    <p>to</p>
+    <p>the</p>
+    <p>javascript</p>
+    <p1 id="we">HI BRO</p1><br>
+    <p1 id="we">WELCOME</p1>
+ 
+    <!--loop starts-->
+
+    <p class="a">HELLO</p>
+    <p class="a">WORLD</p>
+    <span>HI</span>
+    <span>WORLD</span><br>
+
+    <!--SET ATTRIBUTE-->
+    
+    <script>
+        document.querySelector('p').style.color='green'
+        document.querySelector('p').style.fontSize='50px'
+        document.querySelector('p').style.textShadow='2px 2px 2px grey'
+        document.querySelectorAll('#we')[0].style.color='purple'
+        document.querySelectorAll('#we')[1].style.color='blue'
+        document.querySelectorAll('#we')[0].style.fontSize='30px'
+        document.querySelectorAll('#we')[1].style.fontSize='30px'
+        document.querySelectorAll('#we')[0].innerHTML='<b>HI BRO</b>'
+        document.querySelectorAll('#we')[1].innerHTML='<b>welcome</b>'
+        //loop starts here
+        var c=document.querySelectorAll('.a,span')
+        console.log(c)
+        for(i=0;i<c.length;i++)
+        {
+        c[i].style.color="red";
+        }
+        var hi=document.createElement('div')
+        hi.style.cssText=`height:200px;width:200px;background-color:blue;border-radius:20px;`
+        var bdy=document.body
+        bdy.appendChild(hi)
+    </script>
+</body>
+</html>

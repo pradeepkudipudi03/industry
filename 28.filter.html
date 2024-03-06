@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=[21,48,27,94,1,9,3,84,3,8386,21]
+        //ARROW FUNCTION
+        let even=a.filter((val,index)=>{
+            return val%2==0
+        })
+        document.write(even,"<br>")
+        let odd=a.filter((val,index)=>{
+            return val%2!=0
+        })
+        document.write(odd,"<br>")
+
+        //NORMAL FUNCTION
+        let b=a.filter(hi)
+        function hi(val,hi){
+          return val%2==0
+        }
+        document.write(b,"<br>")
+
+        let c=a.filter(hello)
+        function hello(i,o){
+            return i%2!=0
+        }
+        document.write(c)
+    </script>
+</body>
+</html>

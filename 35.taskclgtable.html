@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table,td,th{
+      border: 2px solid black;
+    }
+  </style>
+</head>
+<body>
+  <table id="my">
+    <tr>
+      <th>id</th>
+      <th>name</th>
+    </tr>
+  </table>
+  <script>
+     const college=[
+      {"name":"aec",
+      "id":101
+    },
+    {"name":"acet",
+      "id":102
+    },
+    {"name":"aeu",
+      "id":103
+    },
+    {"name":"apt",
+      "id":104
+    },
+    ]
+
+for(var i=0;i<college.length;i++){
+  
+let ins=document.getElementById("my")
+const tr=document.createElement("tr")
+const con=document.createElement("td")
+con.textContent=college[i].id
+tr.appendChild(con)
+const name=document.createElement("td")
+name.textContent=college[i].name
+tr.appendChild(name)
+ins.appendChild(tr)
+}
+  </script>
+</body>
+</html>

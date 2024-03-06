@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <span id="a">welcome</span>&nbsp;&nbsp;&nbsp;&nbsp;
+    <span class="sp">to</span>&nbsp;&nbsp;&nbsp;&nbsp;
+    <span class="sp">mywebsite</span>
+    <script>
+        var c=document.getElementById('a');
+        c.style.color='green'
+        c.style.fontSize='50px'
+        c.style.textShadow='3px 3px 2px black'
+        c.style.fontFamily='verdana'
+        document.getElementsByClassName('sp')[0].style.color = 'Red'
+        document.getElementsByClassName('sp')[1].style.color = 'blue'
+        document.getElementsByClassName('sp')[0].style.fontSize = '50px'
+        document.getElementsByClassName('sp')[1].style.fontSize = '50px'
+        document.getElementsByClassName('sp')[0].style.fontFamily = 'verdana'
+        document.getElementsByClassName('sp')[1].style.fontFamily = 'verdana'
+        document.getElementsByClassName('sp')[0].style.textShadow = '3px 3px 2px black'
+        document.getElementsByClassName('sp')[1].style.textShadow = '3px 3px 2px black'
+    </script>
+</body>
+</html>

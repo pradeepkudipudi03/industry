@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let frnds=['chandu',"pradeep",'rohit','nagesh','dileep','ali','vijay','sindhu']
+
+        //ARROW FUNCTION
+        let frndcheck=frnds.some((name,i)=>{
+            return name=='akash'
+        })
+        document.write(frndcheck,"<br>")
+
+        //ANONYMOUS FUNCTION
+        let a=frnds.some(function(name,ind){
+            return name=='chandu'
+        })
+        document.write(a,"<br>")
+
+        //NORMAL FUNCTION
+        function frndss(val,ind){
+            return val=='nagesh'
+        }
+        let d=frnds.some(frndss)
+        document.write(d)
+    </script>
+</body>
+</html>

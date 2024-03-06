@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function check(variable) {
+              if (variable === undefined) {
+                  document.write("The variable is undefined.",'<br>');
+              } else if (variable === null) {
+                  document.write("The variable is null.",'<br>');
+              } else {
+                  document.write("The variable is neither undefined nor null.",'<br>');
+              }
+          }
+          let exampleVar1;
+          let exampleVar2 = null;
+          let exampleVar3 = "Hello";
+          check(exampleVar1);
+          check(exampleVar2); 
+          check(exampleVar3); 
+
+    </script>
+</body>
+</html>

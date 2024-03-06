@@ -1,0 +1,39 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <form>
+       focus: <input type="text" onfocus="sam(this)"><br><br>
+        blur:<input type="text" onblur="sam1(this)">
+    </form>
+    <script>
+        function sam(a)
+        {
+            a.style.cssText=`height:100px;
+            width:400px;
+            background-color:grey;
+            border-radius:40px;
+            box-shadow:7px 8px 6px black;
+            transform:rotate('45deg')
+            position:relative;
+            top:50px;`
+        }
+        function sam1(a)
+        {
+            a.type='password';
+            a.style.cssText=`height:100px;
+            width:400px;
+            background-color:grey;
+            border-radius:40px;
+            box-shadow:7px 8px 6px black;
+            transform:rotate('45deg')
+            position:relative;
+            top:50px;`
+        }
+    </script>
+ </body>
+ </html>

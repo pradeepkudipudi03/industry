@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a =['1999','1992','2005','2000']
+        //ANONYMOUS FUNCTION : WITHOUT FUNCTION NAME
+        let b=a.map(function(year,index,array){
+            let c=2024-year
+            document.write(c,"<br>")
+            console.table(c)
+        })
+        //normal function
+        let d=a.map(hi)
+            function hi(yr,ind,arr){
+                let e=2024-yr
+            document.write(e,"<br>")
+            console.table(e)   
+        }
+        //arrow function
+        a.map((yer,index,Array)=>{
+            let j=2024-yer
+            document.write(j,"<br>")
+        })
+    </script>
+</body>
+</html>

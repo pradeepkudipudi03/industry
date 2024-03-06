@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARRAY METHODS</title>
+</head>
+<body>
+    <script>
+        const colors=['red','blue','orange','yellow','pink','black']
+        document.write('1.',colors,"<br><br>")
+
+        //deletes the last element
+        colors.pop()
+        document.write('2.',colors,"<br><br>")
+
+        //push the element at last index position
+        colors.push('white')
+        document.write('3.',colors,"<br><br>")
+
+        //deletes the element at 1st index position
+        colors.shift()
+        document.write('4.',colors,"<br><br>")
+
+        //push the element at 1st index position
+        colors.unshift('biscuit')
+        document.write('5.',colors,"<br><br>")
+
+        var colors1=['red','blue','yellow','orange']
+        var colors2=['black','white','biscuit']
+
+        //it will join the 2 arrays
+        var a=colors1.concat(colors2)
+        document.write('6.',a,"<br><br>")
+
+        //it will start from 1st index pos in array & based on 2nd pos it will delete element in array and add the new elements in array by given elements
+        a.splice(2,1,'hello')
+        document.write('7.',a,"<br><br>")
+
+        a.splice(3,2,'hi','hello')
+        document.write('8.',a,"<br><br>")
+
+        //sort the array based on alphabets
+        a.sort()
+        document.write('9.',a,"<br><br>")
+
+        var c=colors.slice(2,5)
+        document.write('10.',c,"<br><br>")
+
+        let d=a.indexOf('red')
+        console.log(d)     
+    </script>
+</body>
+</html>

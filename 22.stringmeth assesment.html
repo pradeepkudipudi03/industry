@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string methods</title>
+</head>
+<body>
+    <script>
+
+        let str2="hi bro"
+        let str3="HI BRO"
+        let str4="hi-bro-teja"
+
+        document.write('string uppercase ='+str2.toUpperCase()+"<br>")
+        document.write('string lower case = '+str3.toLowerCase()+"<br>")
+        document.write('string concat = '+str2.concat(str3)+"<br>")
+        document.write('string trim = '+str2.trim()+"<br>")
+        document.write('val = '+str2.indexOf('b')+"<br>")
+        document.write('string startswith = '+str2.startsWith("h")+"<br>")
+        document.write('string startswith = '+str2.endsWith("h")+"<br>")
+        document.write('string split = '+str4.split("")+"<br>")
+        document.write('string split = '+str4.split("-")+"<br>")
+        document.write('string slice = '+str4.slice(2)+"<br>")
+        document.write('string slice = '+str4.slice(-7)+"<br>")
+        document.write('string slice = '+str4.slice(2,7)+"<br>")
+        document.write('string slice = '+str4.slice(-8,11)+"<br>")
+        document.write('string substring = '+str4.substring(2,7)+"<br>")
+        document.write('string substr = '+str4.substr(2,8)+"<br>")
+        document.write('string includes = '+str4.includes('bro')+"<br>")
+        document.write('string includes = '+str4.includes('ali')+"<br>")
+        document.write('string repeat = '+str4.repeat(5)+"<br>")
+        document.write('string replace = '+str4.replace('teja','ali')+"<br>")
+    </script>
+</body>
+</html>

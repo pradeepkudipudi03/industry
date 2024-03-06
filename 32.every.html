@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let marks=[73,42,95,67,25,35]
+
+        //ARROW FUNCTION
+        let a=marks.every((score)=>{                                                    
+            document.write(score,"<br>")
+            return score>28
+        })
+        document.write(a,"<br>")
+
+        //ANONYMOUS FUNCTION
+        let b=marks.every(function(scor,ind){
+            document.write(scor,"<br>")
+            return scor<100
+        })
+        document.write(b,"<br>")
+
+        //NORMAL FUNCTION
+        function mar(sc){
+            document.write(sc,"<br>")
+            return sc>10
+        }
+        let d=marks.every(mar)
+        document.write(d,"<br>")
+    </script>
+</body>
+</html>

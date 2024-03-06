@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,tr,td{
+            border: 2px solid black;
+        }
+        td{
+            width: 250px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">1 to 9</button>
+    <button id="btn1">9 to 1</button>
+    <table>
+        <tr>
+            <td>
+            </td>
+            <td>
+
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+
+            </td>
+            <td></td>
+        </tr>
+    </table>
+    <script>
+       document.getElementById("btn").addEventListener("click",()=>{
+        var a=document.querySelectorAll("td");
+     
+        for(var i=0;i<a.length;i++){
+            a[i].innerText=i+1
+        }
+       });
+
+       document.getElementById("btn1").addEventListener("click",()=>{
+        var a2=document.querySelectorAll("td");
+     
+        for(var i=a2.length-1;i>=0;i--){
+            a2[a2.length-i-1].innerText=i+1;
+        }
+       });
+       
+    </script>
+</body>
+</html>

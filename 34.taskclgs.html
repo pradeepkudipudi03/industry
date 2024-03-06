@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College List</title>
+</head>
+<body>
+  <div id="collegeList"></div>
+
+  <script>
+    const colleges = [ // Updated variable name for clarity
+      { name: "AEC", id: 101 },
+      { name: "ACET", id: 102 },
+      { name: "AEU", id: 103 },
+      { name: "APT", id: 104 }
+    ];
+
+    const collegeList = document.getElementById("collegeList");
+
+    for (let i = 0; i < colleges.length-2; i++) {
+      const heading = document.createElement("h3");
+      heading.textContent = `Record ${i + 1}`; // Using backticks for template literals
+
+      const idParagraph = document.createElement("p");
+      idParagraph.textContent = `ID: ${colleges[i].id}`;
+m,,.;//
+      const nameParagraph = document.createElement("p");
+      nameParagraph.textContent = `Name: ${colleges[i].name}`;
+
+      collegeList.appendChild(heading);
+      collegeList.appendChild(idParagraph);
+      collegeList.appendChild(nameParagraph);
+    }
+  </script>
+</body>
+</html>

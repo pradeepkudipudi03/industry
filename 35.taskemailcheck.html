@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Check</title>
+  <style>
+    #btn{
+        height: 40px;
+        width: 150px;
+        color: gray;
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 1px 2px 3px 2px green;
+        border: 0px;
+    }
+    #emailInput{
+        height: 35px;
+        width: 200px;
+        border-radius: 15px;
+        padding-left: 60px;
+        box-shadow: 1px 2px 3px 2px rgb(238, 174, 54);
+        border: 0px;
+    }
+    .a{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        text-shadow: 3px 2px 3px  rgb(231, 87, 87);
+    }
+    #result{
+      color: black;
+      font-size: xx-large;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="a">ENTER MAIL</h1>
+  <input type="text" id="emailInput" placeholder="Enter email address">
+  <button onclick="checkEmail()" id="btn">Check Email</button>
+ <marquee direction="right"><p id="result"></p></marquee> 
+
+  <script>
+    const names = ["pradeep", "chandu", "rohit"];
+
+    function checkEmail() {
+      const email = document.getElementById("emailInput").value.toLowerCase(); // Get and lowercase the email
+      const found = emails.includes(email);
+
+      const resultElement = document.getElementById("result");
+      resultElement.textContent = found ? "Found!" : "Not Found";
+    }
+  </script>
+</body>
+</html>

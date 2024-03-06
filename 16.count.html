@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COUNT TASK</title>
+    <style>
+        #inc{
+            padding: 10px 30px 10px 30px;
+            margin-right: 150px;
+        }
+        #dec{
+            padding: 10px 30px 10px 30px;
+            margin-left: 150px;
+            margin-bottom: -300px;
+        }
+    </style>
+</head>
+<body style="background-color: grey;">
+    <center> <h1>count is <span id="num">1</span></h1></center> 
+    <center><button id="inc">increase</button></center>
+    <center><button id="dec">decrease</button></center>
+    <script>
+   // document.getElementById("inc").addEventListener("click",()=>{
+   //     document.getElementById("num").innerHTML=1+parseInt(document.getElementById("num").innerHTML);
+   // })
+   // document.getElementById("dec").addEventListener("click",()=>{
+   //     document.getElementById("num").innerHTML=parseInt(document.getElementById("num").innerHTML)-1;
+   // })
+
+    document.getElementById('inc').addEventListener('click',()=>{
+        document.getElementById('num').innerHTML=1+parseInt(document.getElementById('num').innerHTML);
+    })
+    document.getElementById('dec').addEventListener('click',()=>{
+        document.getElementById('num').innerHTML=parseInt(document.getElementById('num').innerHTML-1)
+    })
+    </script>
+</body>
+</html>

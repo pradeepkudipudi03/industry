@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style></style>
+</head>
+<body>
+<form id="hi">
+    focus: <input type="text" id="a1" onchange="w()"><br><br>
+    blur:<input type="text"><br><br>
+    <button onclick="form()">submit</button><br><br>
+    <button onclick="form()">reset</button>
+</form>
+<p id="a2"></p>
+<script>
+    function form(){
+        document.getElementById('hi').submit()
+    }
+    function form(){
+        document.getElementById('hi').reset()
+    }
+    function w(){
+        const c=document.getElementById('a1')
+        c.style.textTransform='upperCase'
+    }
+</script>
+</body>
+</html>

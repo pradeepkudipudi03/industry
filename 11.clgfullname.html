@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="a">aec</h1>
+    <h1 id="b">acet</h1>
+    <h1 id="c">acoe</h1>
+    <script>
+        document.getElementById('a').addEventListener('click', func1);
+        function func1(){
+            document.getElementById('a').innerHTML = 'Aditya engineering college'
+            document.getElementById('a').style.color=('red')
+            document.getElementById('a').style.fontFamily='verdana'
+            document.getElementById('a').style.textShadow='2px 3px 3px black'
+            document.getElementById('a').style.backgroundColor='skyblue'
+            document.getElementById('a').style.boxShadow='5px 15px 10px skyblue'
+        }
+        document.getElementById('b').addEventListener('click', func2);
+        function func2(){
+            document.getElementById('b').innerHTML = 'Aditya college of engineering and technology'
+            document.getElementById('b').style.color=('orange')
+            document.getElementById('b').style.fontFamily='verdana'
+            document.getElementById('b').style.textShadow='2px 3px 3px black'
+            document.getElementById('b').style.border='3px solid black'
+            document.getElementById('b').style.boxShadow='5px 5px 10px black'
+        }
+        document.getElementById('c').addEventListener('click', func3);
+        function func3(){
+            document.getElementById('c').innerHTML = 'Aditya college of engineering'
+            document.getElementById('c').style.color=('green')
+            document.getElementById('c').style.fontFamily='papyrus'
+            document.getElementById('c').style.textShadow='2px 2px 3px black'
+        }
+        document.getElementById('a').style.color=('purple')
+        document.getElementById('b').style.color=('maroon')
+        document.getElementById('c').style.color=('blue')
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>count is<span id="num">1</span></h1>
+    <button id="inc">increment</button>
+    <button id="dec">decrement</button>
+    <script>
+        document.getElementById('inc').addEventListener('click',()=>{
+            document.getElementById('num').innerHTML=1+parseInt(document.getElementById('num').innerHTML)
+        })
+        document.getElementById('dec').addEventListener('click',()=>{
+            document.getElementById('num').innerHTML=parseInt(document.getElementById('num').innerHTML-1)
+        })
+    </script>
+</body>
+</html>
